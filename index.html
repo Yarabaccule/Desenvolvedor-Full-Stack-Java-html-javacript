@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="favicon icon" href="https://i.ibb.co/7QCLz4N/Screenshot.png">	 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Media - Início</title>
+	<style>
+
+		body{
+			background: skyblue;
+		}
+		input{
+			margin-top:1% ;
+		}
+		button{
+			margin-top:1% ;	
+			background: #08298A;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			height: 50px;
+			cursor: pointer;
+
+		}
+		#resultado{
+			margin-top:1% ;	
+
+		}
+
+	</style>
+</head>
+<body>
+	<center>
+	<h2>Digite os numeros para obter a média</h2>
+	<input type="number" id="a"><br>
+	<input type="number" id="b"><br>
+	<input type="number" id="c"><br>
+
+	<button onclick="obterMedia()">
+		Calcular Média
+	</button>
+	<div id="resultado">
+		
+	</div>
+	</center>
+	<script>
+		function obterMedia(){
+			var a = parseInt(document.getElementById('a').value);
+			var b = parseInt(document.getElementById('b').value);
+			var c = parseInt(document.getElementById('c').value);
+
+			var media = (a+b+c)/3;
+			document.getElementById("resultado").innerHTML = "Resultado: " +media;
+			console.log(a+b+c);
+		}
+	</script>
+
+</body>
+</html>
